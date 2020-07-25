@@ -22,10 +22,10 @@
     var randNum, count=50;
     window.onload = displayButton();
     function displayButton() {
-      document.getElementsByTagName("body")[0].innerHTML += "<button id=\"rollDieButton\" class=\"btn\" onclick=\"rollTheDie()\">Click to Roll the Die</button>";
+      document.getElementsByTagName("body")[0].innerHTML += "<button id=\"rollDieButton\" class=\"btn\" style=\"margin-top:4em;\" onclick=\"rollTheDie()\">Click to Roll the Die</button>";
     }
     function displayDieImage(i) {
-      document.getElementsByTagName("body")[0].innerHTML = "<img class=\"container\" src=\"die" + i + ".png\">";
+      document.getElementsByTagName("body")[0].innerHTML = "<img class=\"container\" style=\"max-width:450px !important;padding:4em;\" src=\"die" + i + ".png\">";
     }
     function rollTheDie() {
       randNum = Math.round(Math.random()*5 + 1);
